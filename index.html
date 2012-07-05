@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Online Python Visualizer</title>
+
+        
+<script src="lib/codemirror.js"></script>
+<link rel="stylesheet" href="lib/codemirror.css">
+<script src="mode/python/python.js"></script>
+
+<script src="jsrepl.js" id="jsrepl-script"></script> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" ></script> 
+<script src="jqconsole-2.7.min.js"  charset="utf-8"></script>
+
+<link href="css/style.css" rel="stylesheet">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-modal.js"></script>
+<script src="js/main.js"></script>
+
+
+</head>
+<body>
+<body>
+    <div class="modal hide" id="loadLanguageModal">
+        <div class="modal-header">
+            <h3>Loading Interpreter</h3>
+        </div>
+        <div class="modal-body">
+            <div class="progress progress-striped active">
+              <div class="bar" style="width: 0%;" id="loaderProgressBar"></div>
+            </div>
+            <span class="label label-success hidden" id="loaderFinishedLabel">Finished Loading</span>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal" disabled="disabled" id="loadingDialogButton">Close</a>
+        </div>
+    </div>
+    
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="#">Python Web Visualizer</a>
+                <ul class="nav">
+                  <li class="active">
+                    <a href="#">Home</a>
+                  </li>
+                 <!-- <li><a href="about.html">About</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        
+        <div class="main-row row-fluid">
+            <div class="span6 spanSize">
+                <div class="editorContainer" >
+                    <div class="form-inline" id="exampleLinks">
+                        <span>Example 1</span>  <span>Example 2</span>  <span>Example 3</span>  <span>Example 4</span>
+                    </div>
+                    <div class="well codeMirrorWell"  id="editorWell">
+                        <div id="runButton">
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span6 spanSize">
+                <div class="editorContainer halfBox halfBoxTop">
+                    <div class="form-inline" id="speedButtons">
+                        <label>Speed:</label>
+                        <button class="btn">1</button>
+                        <button class="btn">2</button>
+                        <button class="btn">3</button>
+                        <button class="btn">4</button>
+                        <button class="btn btn-primary">5</button>
+                        <button class="btn">6</button>
+                        <button class="btn">7</button>
+                        <button class="btn">8</button>
+                        <button class="btn">9</button>
+                        <button class="btn">10</button>
+                    </div>
+                    <div class="well codeMirrorWell"  id="viewerWell">
+                    </div>
+                </div>
+                <div class="halfBox halfBoxBottom">
+                    <div class="well" id="consoleWell">
+                        <div id="console">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
