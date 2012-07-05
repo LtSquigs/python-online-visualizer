@@ -1,0 +1,171 @@
+body
+{
+    background-image: url('http://subtlepatterns.com/patterns/txture.png');
+}
+
+#runButton {
+    cursor: pointer;
+    background: white;
+}
+
+#exampleLinks span
+{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.spanSize
+{
+    height: 100%; 
+    padding-top: 50px; 
+    padding-bottom: 50px;
+}
+
+.editorContainer
+{
+    box-sizing: border-box; 
+    position: relative;
+}
+
+.halfBox
+{
+    height: 50%;
+    box-sizing: border-box;
+}
+
+.halfBoxTop
+{
+    padding-bottom: 10px;
+}
+
+.halfBoxBottom
+{
+    padding-top: 10px;
+}
+
+#viewerWell
+{
+    margin-bottom: 0px;
+}
+
+#exampleLinks
+{
+    position: absolute; 
+    top: -25px;
+}
+
+#speedButtons
+{
+    position: absolute; top: -35px;
+}
+
+#speedButtons label
+{
+    color: white;
+}
+
+#runButton
+{
+    display: none; 
+    padding-top: 14px; 
+    padding-bottom: 14px; 
+    padding-left: 19px; 
+    padding-right: 19px; 
+    z-index: 5; 
+    background-image: url('play.png'); 
+    background-size: 25px 20px; 
+    background-position: 6px 4px; 
+    background-repeat: no-repeat; 
+    position: absolute; 
+    right: 10px; 
+    top: 10px; 
+    border: 1px solid grey; 
+    border-radius: 3px;
+}
+
+#consoleWell
+{
+    height: 100%; 
+    margin-bottom: 0px; 
+    box-sizing: border-box;
+}
+.codeMirrorWell
+{
+    height: 100%; 
+    box-sizing: border-box; 
+    overflow: auto;
+}
+
+/*
+// CodeMirror CSS
+*/
+
+.CodeMirror-scroll
+{
+    height: auto; overflow: visible;
+}
+
+.hilighted-line
+{
+    background-color: yellow !important;
+}
+
+/*
+// Console CSS
+*/
+
+/* The console container element */
+#console {
+  position: absolute;
+  background-color:black;
+}
+
+
+/* The inner console element. */
+.jqconsole {
+    padding: 10px;
+}
+/* The cursor. */
+.jqconsole-cursor {
+    background-color: gray;
+}
+
+.jqconsole-hilighted {
+    color: red;
+}
+
+.jqconsole-error {
+    color: purple;
+}
+/* The cursor color when the console looses focus. */
+.jqconsole-blurred .jqconsole-cursor {
+    background-color: #666;
+}
+/* The current prompt text color */
+.jqconsole-prompt {
+    color: #0d0;
+}
+/* The command history */
+.jqconsole-old-prompt {
+    color: #0b0;
+    font-weight: normal;
+}
+/* The text color when in input mode. */
+.jqconsole-input {
+    color: #dd0;
+}
+/* Previously entered input. */
+.jqconsole-old-input {
+    color: #bb0;
+    font-weight: normal;
+}
+/* The text color of the output. */
+.jqconsole-output {
+    color: white;
+}
