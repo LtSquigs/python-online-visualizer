@@ -414,6 +414,7 @@ $(window).resize( function () {
 });
 
 $(document).ready( function () {
+    $('#loaderFinishedLabel').hide();
     $(window).resize();
     
     codeEditor = CodeMirror( $('#editorWell')[0], {
